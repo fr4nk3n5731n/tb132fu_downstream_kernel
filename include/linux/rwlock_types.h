@@ -8,8 +8,8 @@
  * portions Copyright 2005, Red Hat, Inc., Ingo Molnar
  * Released under the General Public License (GPL).
  */
-typedef struct {
-	arch_rwlock_t raw_lock;
+typedef struct rwlock_t {
+	struct arch_rwlock_t raw_lock;
 #ifdef CONFIG_GENERIC_LOCKBREAK
 	unsigned int break_lock;
 #endif
